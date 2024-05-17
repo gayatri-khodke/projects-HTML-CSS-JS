@@ -2,6 +2,7 @@ let wraper=document.querySelector('.wraper');
 let inputarray=document.getElementsByTagName('input');
 let submitbtn=document.querySelector('#add');
 submitbtn.addEventListener('click',addquestion);
+let mybool=true;
 let quelist=[];
 
 function addquestion(){
@@ -37,6 +38,7 @@ function removeinputvalue(inputarray){
     }
 }
 
+
 function addeventlistnertoIcon(){
     let iconelem=document.querySelectorAll('.fa-solid');
     iconelem.forEach(e=>{
@@ -44,8 +46,8 @@ function addeventlistnertoIcon(){
 });
 }
 
-let mybool=true;
 function displayanswer(e){
+    console.log(e);
     let elem=e.target;
     let answerdiv=elem.closest('.Question').children[1];
     if(mybool){
@@ -56,4 +58,3 @@ function displayanswer(e){
     }
     mybool=!mybool;
 }
-

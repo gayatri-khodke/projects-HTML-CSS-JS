@@ -58,7 +58,7 @@ function displaypeople(position){
 }
 function checkcount(index){
     if(index>peoplearr.length){
-        return '0';
+        return 0;
     }
     else if(index<1){
         return peoplearr.length-1;
