@@ -4,8 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-do</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/20945cdd74.js" crossorigin="anonymous"></script>
 </head>
 <body>
-        
+      <section class="container">
+        <div class="wraper">
+            <h1 id="myh1">To-Do List</h1>
+            <div class="inputdiv">
+                <input type="text" value="" class="userinput">
+                <button id="btn">Add</button>
+            </div>
+            <div class="output">
+                <div class="todo">
+                    <h3 class="todo1">to do is goes here</h3>
+                    <span>
+                        <i class="fa-solid fa-pencil edit"></i>
+                        <i class="fa-solid fa-trash delete"></i>
+                    </span>
+                </div>
+                <!-- <div class="todo">
+                    <h3 class="todo1">to do is goes here</h3>
+                    <span>
+                        <i class="fa-solid fa-pencil"></i>
+                        <i class="fa-solid fa-trash"></i>
+                    </span>
+                </div> -->
+            </div>
+        </div>
+      </section>  
+      <script src="index.js"></script>
 </body>
 </html>

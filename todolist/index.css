@@ -1,0 +1,78 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background:linear-gradient(to right, rgb(196, 219, 226),rgb(215, 215, 219));
+}
+.container{
+    width:45%;
+    min-height:400px;
+    margin:5rem auto;
+    padding:1rem 0px;
+    background-color:#fff;
+    border:none;
+    box-shadow:5px 10px 10px rgb(84, 83, 83);
+}
+.wraper{
+    width:100%;
+}
+#myh1{
+    text-align:center;
+    margin:1rem;
+}
+.inputdiv{
+    width:80%;
+    margin:auto;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+.userinput{
+    width:85%;
+    font-size:1.5rem;
+    border-radius:3px;
+    padding:0.2rem;
+}
+.output{
+    width:90%;
+    margin:1rem auto;
+    padding:0.2rem;
+}
+#btn{
+    padding:0.5rem 1rem;
+    border:none;
+    box-shadow:4px 4px 5px gray;
+    background-color:skyblue;
+    border-radius:5px;
+}
+.todo{
+    width:100%;
+    padding:1%;
+    margin-top:1rem;
+    display:flex;
+    justify-content:space-around;
+    justify-content:center;
+    border:1px ridge gray;
+    box-shadow:4px 4px 5px gray;
+}
+.todo1{
+    flex-grow:2;
+}
+.todo span .fa-trash{
+    color:red;
+    margin:0px 1rem;
+}
+.fa-pencil{
+    color:green;
+}
+
+
+
+
+
+
+
+
+
