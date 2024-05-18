@@ -76,11 +76,11 @@
     color:red;
     padding:0.1rem;
     margin:1rem;
-    border:2px solid maroon;
-    transition: all ease 1s;
+    /* border:2px solid maroon; */
+    transition: all ease 0.3s;
 }
 i:hover{
-    transform:rotate(90deg);
+    transform:rotate(180deg);
 }
 .answer{
      width:100%;
