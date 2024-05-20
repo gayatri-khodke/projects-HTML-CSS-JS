@@ -22,3 +22,16 @@ nav ul li{
     list-style-type:none;
     font-size:1.2rem;
 }
+#icon{
+    display:none;
+}
+ @media only screen and (max-width:600px){
+    #icon{
+        display:block;
+        transition: all linear 2s;
+    }
+    #icon:hover{
+        transform: rotate(180deg);
+    }
+
+ }

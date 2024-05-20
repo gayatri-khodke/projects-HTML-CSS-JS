@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learn about video tag</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        .videodiv{
+            width:100vw;
+            height:100vh;
+        }
+        .btn{
+            position:absolute;
+            left:40%;
+            bottom:3rem;
+        }
+        .btn button{
+            padding:1rem 2rem;
+            border:1px solid black;
+        }
+        #heading{
+            display:absolute;
+            top:20%;
+            left:25%;
+            background-color:skyblue;
+        }
+    </style>
+</head>
+<body>
+    <video id="video" class="videodiv">
+        <source  src="video1.mp4">
+    </video>
+    <h1 id="heading">Learn Video Tag and It's attributes</h1>
+    <div class="btn">
+        <button class="play">Play</button>
+        <button class="pause">Pause</button>
+    </div>
+
+    <script>
+        let video=document.querySelector('#video');
+        let btn=document.querySelector('.btn');
+        btn.addEventListener('click',manipulatevideo);
+        function manipulatevideo(e){
+            let element=e.target;
+            console.log(e);
+            if(element.classList.contains('play')){
+                video.play();
+            }
+            else if(element.classList.contains('pause')){
+                video.pause();
+            }
+            
+        }
+    </script>
+</body>
+</html>
+
+
+
+<!-- src: Specifies the URL of the video file.
+controls: Adds play, pause, and volume controls to the video.
+autoplay: Starts playing the video as soon as it is ready.
+loop: Repeats the video when it ends.
+muted: Mutes the audio of the video.
+poster: Displays an image before the video plays.
+preload: Specifies how much of the video should be loaded when the page loads.
+width: Sets the width of the video player.
+height: Sets the height of the video player.
+crossorigin: Configures CORS settings for the video.
+playsinline: Plays the video inline rather than fullscreen on mobile devices.
+disablepictureinpicture: Prevents the video from being played in Picture-in-Picture mode. -->
+
+
+<!-- play(): Starts or resumes video playback.
+video.play();
+
+pause(): Pauses the video playback.
+video.pause();
+ 
+load(): Reloads the video element to update sources.
+video.load();
+
+
+canPlayType(type): Checks if the browser can play the specified video type.
+video.canPlayType('video/mp4');
+
+
+addTextTrack(kind, label, language): Adds a new text track to the video.
+video.addTextTrack('subtitles', 'English Subtitles', 'en');
+
+currentTime: Gets or sets the current playback time in seconds.
+video.currentTime = 10; // Seek to 10 seconds
+
+duration: Returns the total length of the video in seconds.
+let length = video.duration;
+
+paused: Returns true if the video is paused.
+let isPaused = video.paused;
+
+
+ended: Returns true if the video has ended.
+let hasEnded = video.ended;
+
+muted: Gets or sets the muted state of the video.
+video.muted = true;
+
+
+volume: Gets or sets the volume level (0.0 to 1.0).
+video.volume = 0.5; // Set volume to 50%
+
+playbackRate: Gets or sets the playback speed of the video.
+video.playbackRate = 1.5; // Play at 1.5x speed
+
+
+readyState: Returns the current readiness state of the video.
+let state = video.readyState;
+ -->
