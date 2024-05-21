@@ -17,16 +17,3 @@ function validateForm(e){
         </tr>`;
     }
 }
-function checkuserInput(array){
-    let name=array[0].value;
-    let regex = /^[A-Za-z]+$/;
-    let k=regex.test(name);
-    let email=array[2].value;
-    if((k && name.length>3) || () ){
-        returnValue=true;
-    }
-    else{
-        returnValue=false;
-    }
-    return returnValue;
-}
