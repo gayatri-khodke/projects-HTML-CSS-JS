@@ -4,29 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nav bar</title>
-    <script src="https://kit.fontawesome.com/20945cdd74.js" crossorigin="anonymous"></script></head>
+    <script src="https://kit.fontawesome.com/20945cdd74.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <nav>
+        <h1 id="logo">Coding <span>Addict</span></h1>
         <ul class="list1">
-            <li>Coding</li>
-            <li>Addict</li>
-            <li id="icon"><i class="fa-brands fa-facebook">icon</i></li>
-        </ul>
-        <ul class="list2">
             <li>Home</li>
             <li>About</li>
             <li>Project</li>
             <li>Contact</li>
         </ul>
-        <ul class="lists3">
-            <li><i class="fa-brands fa-facebook">face</i></li>
-            <li><i class="fa-brands fa-twitter">tweet</i></li>
-            <li><i class="fa-brands fa-linkedin">lin</i></li>
+        <ul class="lastlist">
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-linkedin"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-solid fa-gem"></i></li>
         </ul>
+        <span id="icon">
+            <i class="fa-solid fa-bars"></i>
+        </span>
     </nav>
-    
-    <script src="index.js"></script>
+
+    <script>
+        let icon = document.querySelector('#icon');
+        icon.addEventListener('click', function() {
+            let list1 = document.querySelector('.list1');
+            list1.classList.toggle('show');
+        });
+    </script>
 </body>
 </html>
