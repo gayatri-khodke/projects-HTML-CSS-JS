@@ -1,7 +1,8 @@
 let fdiv=document.forms['myform'];
 console.log(fdiv);
 let returnValue=true;
-function validateForm(){
+function validateForm(e){
+    e.preventDefault();
     let fname=fdiv['fname'].value;
     let lname=fdiv['lname'].value;
     let email=fdiv['email'].value;

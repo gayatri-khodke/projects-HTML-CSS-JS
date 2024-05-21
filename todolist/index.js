@@ -19,16 +19,29 @@ function addTodo() {
 
 function displayTodo() {
     output.innerHTML = ''; 
+    // array.forEach((e) => {
+    //     let content = `<div class="todo">
+    //         <h3 class="todo1">${e}</h3>
+    //         <span>
+    //             <i class="fa-solid fa-pencil edit"></i>
+    //             <i class="fa-solid fa-trash delete"></i>
+    //         </span>
+    //     </div>`;
+    //     output.insertAdjacentHTML('beforeend', content);
+    // });
+    
+    // instead of (append(), insertAdjacentHTML(),fragment()) this methods we can use '+=' operator to add our html Elements. 
+    
     array.forEach((e) => {
-        let content = `<div class="todo">
-            <h3 class="todo1">${e}</h3>
-            <span>
-                <i class="fa-solid fa-pencil edit"></i>
-                <i class="fa-solid fa-trash delete"></i>
-            </span>
-        </div>`;
-        output.insertAdjacentHTML('beforeend', content);
+    output.innerHTML+= `<div class="todo">
+           <h3 class="todo1">${e}</h3>
+           <span>
+               <i class="fa-solid fa-pencil edit"></i>
+               <i class="fa-solid fa-trash delete"></i>
+           </span>
+       </div>`;
     });
+
     addEventListeners();
 }
 

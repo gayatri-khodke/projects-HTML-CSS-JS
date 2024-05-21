@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+header{
+    text-align:center;
+    margin:3rem auto;
+}
+header input, label,button{
+    padding:0.4rem;
+    margin:1rem;
+    font-size:1.2rem;
+}
+input{
+    width:5%;
+}
+button{
+    background-color:rgb(197, 228, 240);
+    border:none;
+
+}
+.para{
+    width:50%;
+    padding:1rem;
+    /* box-shadow:1px 1px 5px gray;
+    border:none; */
+    margin:auto;
+}
+p{
+    font-size:1.4rem;
+    margin:1rem;
+}
