@@ -9,29 +9,43 @@
 <body>
     <h1>Registration Form</h1>
     <div class="container">
-        <form action="" name="myform" onsubmit="return validateForm()">
+        <form action="" name="myform">
             <div class="info">
-                 First Name:- <input type="text" name="fname" value="" placeholder="Enter Your First Name"><span></span>
+                 First Name:- <input type="text" class="userinput" name="fname" value="" placeholder="Enter Your First Name"><span></span>
             </div>
             <div class="info">
-                Last Name:- <input type="text" name="lname" value="" placeholder="Enter you Last Name"><span></span>
+                Last Name:- <input type="text" class="userinput" name="lname" value="" placeholder="Enter you Last Name"><span></span>
             </div>
             <div class="info">
-                Email  :- <input type="text" name="email" value="" placeholder="Enter you Email"><span></span>
+                Email  :- <input type="text" class="userinput" name="email" value="" placeholder="Enter you Email"><span></span>
             </div>
             <div class="info">
-                Passward:- <input type="text" name="passward" value="" placeholder="Enter you passward"><span></span>
+                Passward:- <input type="text" class="userinput" name="passward" value="" placeholder="Enter you passward"><span></span>
             </div>
             <div class="info">
-                Conform Passward:- <input type="text" name="cpassward" value="" placeholder="Enter you Passward"><span></span>
+                Conform Passward:- <input type="text" class="userinput" name="cpassward" value="" placeholder="Enter you Passward"><span></span>
             </div><div class="info">
-                Phone NO:- <input type="text" name="phone" value="" placeholder="Enter you phone"><span></span>
+                Phone NO:- <input type="text" class="userinput" name="phone" value="" placeholder="Enter you phone"><span></span>
             </div>
             <div class="info">
                  <input type="submit">
             </div>
         </form>
     </div>
+    <section class="output">
+        <table>
+            <thead>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Passward</th>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </section>
 
     <script src="index.js"></script>
 </body>

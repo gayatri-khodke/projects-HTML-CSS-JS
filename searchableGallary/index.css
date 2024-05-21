@@ -12,7 +12,6 @@
     /* position:relative; */
     align-items:space-between;
     justify-content:center;
-    border:2px dotted yellow;
 }
 .box{
     float:left;
@@ -22,7 +21,6 @@
     margin:20px;
     padding:1rem;
     margin-left:50px;
-    /* position:relative; */
     box-shadow:2px 2px 2px rgb(146, 146, 146);
 }
 .btn{
@@ -69,13 +67,10 @@
 .horizantalgallary{
     width: 100%;
     text-align:center;
-    /* position:relative; */
-    border:2px solid green;
 }
 #wraper{
     padding:0rem;
     width:80%;
-    border:2px solid blue;
     margin:1rem auto;
     display:flex;
     justify-content:space-between;

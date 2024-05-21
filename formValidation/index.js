@@ -1,44 +1,32 @@
-let fdiv=document.forms['myform'];
-console.log(fdiv);
-let returnValue=true;
+let formTag=document.querySelector('form');
+let tbody=document.querySelector('tbody');
+formTag.addEventListener('submit',validateForm);
 function validateForm(e){
     e.preventDefault();
-    let fname=fdiv['fname'].value;
-    let lname=fdiv['lname'].value;
-    let email=fdiv['email'].value;
-    let passward=fdiv['passward'].vlaue;
-    let cpassward=fdiv['cpassward'].vlaue;
-    if(fname.length<5 || fname==''){
-        throwError(0,'*Enter valid name');
-        returnValue=false;
+    let nodeArray=document.querySelectorAll('.userinput');
+    let info=Array.from(nodeArray);
+    console.log('fomr submited');
+    let check=checkuserInput(info);
+    if(check){
+        tbody.innerHTML+=`<tr>
+        <td>${info[0].value}</td>
+        <td>${info[1].value}</td>
+        <td>${info[2].value}</td>
+        <td>${info[3].value}</td>
+        <td>${info[4].value}</td>
+        </tr>`;
     }
-    if(email.endsWith('.com')==false || email==''){
-        let specialchar=email.includes('@');
-        console.log(spacialchar);
-        if(specialchar==false){
-            throwError(2,'*Enter valid email');
-            returnValue=false;
-        }
-    }
-    if(passward.length<6 || passward==''){
-        throwError(3,'*Enter valid passward');
-        returnValue=false;
-        return false;
-    }
-    if(passward!==cpassward || cpassward==''){
-        throwError(4,'*invalid conform passward');
-        returnValue=false;
-        return false;
-    }
-    return  returnValue;
-
 }
-let infodiv=document.getElementsByClassName('info');
-function throwError(position,str){
-    infodiv[position].lastElementChild.innerHTML=str;
-}
-
-function checkemail(email){
-    let specialchar='@' in email;
-    console.log(spacialchar);
+function checkuserInput(array){
+    let name=array[0].value;
+    let regex = /^[A-Za-z]+$/;
+    let k=regex.test(name);
+    let email=array[2].value;
+    if((k && name.length>3) || () ){
+        returnValue=true;
+    }
+    else{
+        returnValue=false;
+    }
+    return returnValue;
 }

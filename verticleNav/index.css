@@ -1,0 +1,90 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background-color:rgb(210, 229, 236);
+}
+h2, span{
+    font-size:2rem;
+    text-shadow:2px 3px 5px gray;
+}
+span{
+    color:rgb(88, 168, 199);
+}
+.navdiv{
+    width:25%;
+    border:none;
+    height:100vh;
+    position:relative;
+    left:0px;
+    background-color:#fff;
+    border:none;
+}
+a{
+    text-decoration:none;
+    color:black;
+}
+.ul1 li{
+    padding:0.5rem 1.4rem;
+    margin:0.2rem;
+    list-style-type:none;
+    font-size:1.3rem;
+}
+.ul1 li:hover{
+    background-color:rgb(231, 231, 236);
+}
+.ul2{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:absolute;
+    bottom:1rem;
+    color:rgb(9, 82, 111);
+}
+.ul2 li{
+    padding:0.4rem;
+    list-style-type:none;
+    font-size:1.5rem;
+}
+.fa-xmark{
+    position:absolute;
+    top:1rem;
+    font-size:1.4rem;
+    right:0.5rem;
+}
+.fa-bars{
+    position:absolute;
+    top:1rem;
+    right:2rem;
+    font-size:1.5rem;
+    color:#fff;
+    transition:all linear 0.5s;
+}
+.fa-bars:hover{
+    transform:rotate(180deg);
+}
+.icon2{
+    animation-name:scaleme;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    padding:0.1rem;
+    border:2px solid rgb(248, 249, 249);
+}
+@keyframes scaleme{
+    from{
+        font-size:1.5rem;
+    }
+    to{
+        font-size:2rem;
+    }
+}
+@media only screen and (max-width:500px){
+    .navdiv{
+        width:100%;
+    }    
+}

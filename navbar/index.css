@@ -38,8 +38,11 @@ nav ul li:hover{
     display:block;
 }
 .lastlist{
-    visibility:hidden;
+    /* visibility:hidden; */
+    display:none;
 }
+/* visibility hidden only hide element but it will leave space that accupy element */
+/* instead of visibility hidden used display none */
 #icon{
     position: absolute;
     top: 1rem;
@@ -72,7 +75,9 @@ nav ul li:hover{
         display: none;
     }
     .lastlist{
-        visibility: visible;
+        /* visibility: visible; */
+        display:block;
+        display:flex;
         color: rgb(20, 128, 171);
     }
     .list1{

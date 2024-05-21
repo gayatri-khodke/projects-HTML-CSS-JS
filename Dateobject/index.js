@@ -32,7 +32,7 @@ let sec = document.querySelector('#sec');
 // Function to display the remaining time
 function displayTime() {
     // Defining the future date and the current date
-    let futureDate = new Date(2024, 5, 20, 22, 0, 1); // Adjust month to be zero-indexed
+    let futureDate = new Date(2024, 5, 24, 22, 0, 1); // Adjust month to be zero-indexed
     let currentDate = new Date();
     // console.log(currentDate);
 
