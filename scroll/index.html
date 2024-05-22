@@ -11,11 +11,11 @@
     <nav class="nav">
         <h1 id="logo">Coding <span>Addict</span></h1>
         <ul class="list1">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#project">Project</a></li>
-            <li><a href="#contact" >Contact</a></li>
-            <li><a href="#learnmore" >Learn More</a></li>
+            <li><a href="#home" class="scroll-link">Home</a></li>
+            <li><a href="#about" class="scroll-link">About</a></li>
+            <li><a href="#project" class="scroll-link">Project</a></li>
+            <li><a href="#contact" class="scroll-link" >Contact</a></li>
+            <li><a href="#learnmore" class="scroll-link" >Learn More</a></li>
         </ul>
         <ul class="lastlist">
             <li><i class="fa-brands fa-facebook"></i></li>
@@ -27,7 +27,7 @@
             <i class="fa-solid fa-bars"></i>
         </span>
     </nav>
-    <section class="section2">
+    <section class="section2" id="home">
       <h1>Scroll Page</h1>
     </section>
 
@@ -61,3 +61,17 @@
     <script src="index.js"></script>
 </body>
 </html>
+
+
+<!-- we can jump over the particular text or element on a same page by using <a></a> anchor tag
+just we need to give same href as a id to that particular element 
+ex:- <a href="#about">about</a>    <h1 id="about">about</h1>
+
+but we are going diractly this is not smooth effect while jump over that element 
+so we need to write in our css :-- 
+html{
+  scroll-behaviour:smooth;
+}
+ 
+but there is a problem if we are fixing any element as a fix position then it will not work properly
+when we click on link then we will not reach at a exact position mean element  -->
