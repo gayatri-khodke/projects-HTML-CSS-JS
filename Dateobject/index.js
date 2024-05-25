@@ -33,6 +33,8 @@ let sec = document.querySelector('#sec');
 function displayTime() {
     // Defining the future date and the current date
     let futureDate = new Date(2024, 5, 24, 22, 0, 1); // Adjust month to be zero-indexed
+                 // new Date(year,month,day,hours,minutes,seconds)
+
     let currentDate = new Date();
     // console.log(currentDate);
 
