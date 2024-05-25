@@ -29,17 +29,20 @@ function displayTodo() {
     output.innerHTML = '';
     array.forEach((e, index) => {
         let content = `<div class="todo" data-index="${index}">
-            <h3 class="todo1">${e.task} deadline: ${e.futuredate}</h3>
+            <h3 class="todo1">${e.task} </h3>
             <span id="timer${index}" ></span>
             <span>
                 <i class="fa-solid fa-pencil edit"></i>
                 <i class="fa-solid fa-trash delete"></i>
             </span>
-        </div>`;
+        </div>
+        <div class='showdeadline'>deadline: ${e.futuredate}</div>
+        `;
         output.insertAdjacentHTML('beforeend', content);
         setTaskTimer(index, e.currentdate);
     });
     addEventListeners();
+    addeventTOdeadline();
 }
 
 function setTaskTimer(index, deadline) {
@@ -150,4 +153,16 @@ function getFutureDate(deadline) {
     let fminutes = fdate.getMinutes();
     let fseconds = fdate.getSeconds();
     return `${fday}/${fmonth}/${fyear} ${fhour}:${fminutes}:${fseconds}`;
+}
+
+function addeventTOdeadline(){
+    let tododiv=document.querySelectorAll('.todo1');
+    tododiv.forEach(e=>{
+        e.addEventListener('click',toggleONdeadline);
+    })
+}
+function toggleONdeadline(e){
+    let showdeadline=e.target.closest('.todo').nextElementSibling;
+    console.log(e.target.closest('.todo').nextElementSibling);
+    showdeadline.classList.toggle('showdeadline');
 }

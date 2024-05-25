@@ -50,7 +50,7 @@ body{
 .todo{
     width:100%;
     padding:1%;
-    margin-top:1rem;
+    margin:1rem 0rem;
     display:flex;
     justify-content:space-around;
     justify-content:center;
@@ -67,7 +67,18 @@ body{
 .fa-pencil{
     color:green;
 }
-
+#settime{
+    margin:0rem 1rem;
+    padding:0.5rem;
+}
+.showdeadline{
+    display:none;
+    height:40px;
+    background-color:green;
+    border:2px solid pink;
+    padding:2rem;
+    font-size:1.5rem;
+}
 
 
 
