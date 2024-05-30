@@ -68,7 +68,7 @@ function setTaskTimer(index, deadline) {
             let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
             // Display the timer
-            timerElement.textContent = `Timer:${hours}:${minutes}:${seconds}`;
+            timerElement.textContent = `${hours}:${minutes}:${seconds}`;
             console.log(hours,minutes,seconds);
         }
     }, 1000);
