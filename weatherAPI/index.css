@@ -1,0 +1,35 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+.container{
+    width:30%;
+    height:450px;
+    border:2px solid black;
+    background-image:url('bg1.jpeg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    border:none;
+    border-radius:10px;
+    text-align:center;
+    margin:auto;
+}
+.cloudimg{
+    width:20%;
+    height:15%;
+}
+input{
+    padding:0.3rem;
+    border:none;
+    outline:none;
+    background:transparent;
+    border-bottom:2px solid black;
+    color:#fff;
+}
