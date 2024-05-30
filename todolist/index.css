@@ -61,20 +61,23 @@ body{
     padding:2%;
     margin:1rem 0rem;
     display:flex;
-    justify-content:space-around;
     justify-content:center;
     border:1px ridge gray;
     box-shadow:4px 4px 5px gray;
 }
 .todo1{
     flex-grow:2;
+    font-size:0.9rem;
 }
 .todo span .fa-trash{
     color:red;
-    margin:0px 1rem;
+    margin:2px;
 }
 .fa-pencil{
     color:green;
+}
+.time{
+    font-size:0.8rem;
 }
 #settime{
     margin:0rem 1rem;
@@ -98,7 +101,7 @@ select{
 
 @media only screen and (max-width:600px){
     .container{
-        width:90%;
+        width:92%;
     }
     .inputdiv{
         margin:0px 0.3rem;
@@ -124,7 +127,6 @@ select{
         font-size:1.6rem;
         color:green;
     }
-
 }
 
 

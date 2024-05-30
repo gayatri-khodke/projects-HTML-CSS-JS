@@ -30,7 +30,7 @@ function displayTodo() {
     array.forEach((e, index) => {
         let content = `<div class="todo" data-index="${index}">
             <h3 class="todo1">${e.task} </h3>
-            <span id="timer${index}" ></span>
+            <span class="time" id="timer${index}" ></span>
             <span>
                 <i class="fa-solid fa-pencil edit"></i>
                 <i class="fa-solid fa-trash delete"></i>
